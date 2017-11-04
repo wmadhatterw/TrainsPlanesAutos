@@ -19,8 +19,8 @@ var getKey = '';
 
 $(document).ready(function() {
 
+
      $("#add-train").on("click", function() {
-          
      	// YOUR TASK!!!
      	// Code in the logic for storing and retrieving the most recent user.
      	// Dont forget to provide initial data to your Firebase database.
