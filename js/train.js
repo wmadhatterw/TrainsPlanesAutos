@@ -20,6 +20,7 @@ var getKey = '';
 $(document).ready(function() {
 
      $("#add-train").on("click", function() {
+          
      	// YOUR TASK!!!
      	// Code in the logic for storing and retrieving the most recent user.
      	// Dont forget to provide initial data to your Firebase database.
@@ -94,6 +95,10 @@ $("body").on("click", ".remove-train", function(){
      getKey = $(this).parent().parent().attr('id');
      dataRef.child(getKey).remove();
 });
+
+
+// -----------Below is the refresh button--------!!!!
+
 // $("body").on("click", ".refresh-train", function(){
 //           firstTimeConverted = moment(firstTrainTime, "hh:mm").subtract(1, "years");
 //           currentTime = moment();
@@ -119,13 +124,7 @@ $("body").on("click", ".remove-train", function(){
 //                "<td class='col-xs-1'>" + "<input type='submit' value='remove train' class='remove-train btn btn-primary btn-xs'>" + "</td>" +
 //                "<td class='col-xs-1'>" + "<input type='submit' value='refresh train' class='refresh-train btn btn-primary btn-xs'>" + "</td>" +
 //                "</tr>");
-// // Handle the errors
-// }, function(errorObject){
-//      console.log("Errors handled: " + errorObject.code)
-// });
-//      // $(this).closest ('tr').remove();
-//      // getKey = $(this).parent().parent().attr('id');
-//      // dataRef.child(getKey).remove();
+   
 // });
 
 }); // Closes jQuery wrapper
